@@ -9,87 +9,211 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView1"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        android:alpha="0.5"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumerAC"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/счеты"
+        app:srcCompat="@drawable/abacus"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="219dp" />
+        tools:layout_editor_absoluteX="0dp" />
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/cardview_light_background"
-        android:text="Hello World ! This is start for Calculator!"
+        android:backgroundTint="#4CAF50"
+        android:text=" This is start for Calculator!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
-
-    <TextView
-        android:id="@+id/MyTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thise is text View for Test"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.897"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
+        app:layout_constraintVertical_bias="0.100000024" />
 
     <Button
-        android:id="@+id/buttonTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Push button to go on"
+        android:id="@+id/buttonCalculatorNumerAC"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#F4E1D2"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp"
+
+        android:text="AC"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculatorNumer1"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer1" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.872"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.881" />
-
-    <Switch
-        android:id="@+id/try_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch to try"
-        app:layout_constraintBottom_toTopOf="@+id/buttonTest"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.884"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.687" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is CheckBox to try"
-        app:layout_constraintBottom_toTopOf="@+id/MyTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.267" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
+    <Button
+        android:id="@+id/buttonCalculatorNumer2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalculatorNumer1"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer1" />
+
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalculatorNumer2"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer2" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer1" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="5"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer2" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="6"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer3" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer4" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="8"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer5" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="9"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer6"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer6" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumer0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer8"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer8" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumerDiv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:text="/"
+        android:backgroundTint="#F36E07"
+        android:textColorHighlight="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalculatorNumer3"
+        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer3"        />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumerX"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="X"
+        android:backgroundTint="#F36E07"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerDiv"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerDiv" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumerMin"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:backgroundTint="#F36E07"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerX"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerX" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumerPlus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        android:backgroundTint="#F36E07"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerMin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerMin" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumerEqulse"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="="
+        android:backgroundTint="#F36E07"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer9"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer9" />
+
+    <Button
+        android:id="@+id/buttonCalculatorNumerCommar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F36E07"
+
+
+        android:text=","
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer7"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer7" />
+
+    <TextView
+        android:id="@+id/textViewAnser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton for test"
+        android:text="Calculation Answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTest"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
