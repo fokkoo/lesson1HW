@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     String finalAnswerString = new String();
     String current_math_action = new String();
 
-
     private TextView first_Number;
     private TextView second_Number;
     private TextView math_Action;
