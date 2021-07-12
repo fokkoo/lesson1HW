@@ -19,22 +19,21 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/abacus"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
-
+        tools:layout_editor_absoluteX="58dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
         android:background="@color/cardview_light_background"
         android:backgroundTint="#4CAF50"
         android:text=" This is start for Calculator!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/buttonCalculatorNumerAC"
@@ -212,8 +211,52 @@
         android:text="Calculation Answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Text_constant_Equlse"
+        app:layout_constraintTop_toBottomOf="@+id/Text_constant_Equlse"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/first_Number"
+        android:layout_width="244dp"
+        android:layout_height="42dp"
+        android:text="First Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerCommar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerPlus"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/second_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Second Number"
+        app:layout_constraintStart_toStartOf="@+id/first_Number"
+        app:layout_constraintTop_toBottomOf="@+id/first_Number" />
+
+    <TextView
+        android:id="@+id/current_math_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Current math action"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/first_Number"
+        app:layout_constraintHorizontal_bias="0.626"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer0" />
+        app:layout_constraintTop_toBottomOf="@+id/first_Number" />
+
+    <TextView
+        android:id="@+id/Text_constant_Equlse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="="
+        app:layout_constraintStart_toStartOf="@+id/second_Number"
+        app:layout_constraintTop_toBottomOf="@+id/second_Number" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
