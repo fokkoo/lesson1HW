@@ -27,7 +27,7 @@
         android:layout_height="47dp"
         android:background="@color/cardview_light_background"
         android:backgroundTint="#4CAF50"
-        android:text=" This is start for Calculator!"
+        android:text="@string/LanguageResource"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintLeft_toLeftOf="parent"
