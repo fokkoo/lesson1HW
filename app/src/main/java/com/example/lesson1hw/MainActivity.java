@@ -304,12 +304,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateMathAction() {
         math_Action.setText(String.valueOf(current_math_action));
-        //first_Number.setText(String.valueOf(firstNumberString));
+        
     }
 
     private void updateMathAnswer() {
 
         math_Answer.setText(String.valueOf(finalAnswerString));
+
 
     }
 }
