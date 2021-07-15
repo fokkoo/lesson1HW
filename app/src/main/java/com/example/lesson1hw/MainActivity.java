@@ -221,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // initRadioButtons();
+        //
         initMyRadioButtons();
     }
 
@@ -268,7 +268,7 @@ public class MainActivity extends AppCompatActivity {
             setAppTheme(OriginCodeSyle);
             recreate();
         });
-  
+
     }
 
 
