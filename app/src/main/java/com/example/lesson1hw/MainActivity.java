@@ -46,14 +46,12 @@ public class MainActivity extends AppCompatActivity {
         setTheme(currentThemeResId);
 
 
-
         setContentView(R.layout.activity_main);
 
 
         Typeface typefaceTokyoZoo = Typeface.createFromAsset(getAssets(), "font/ZenTokyoZoo-Regular.ttf");
         TextView textViewHeadline = findViewById(R.id.textViewHeadline2);
         textViewHeadline.setTypeface(typefaceTokyoZoo);
-
 
 
         first_Number = findViewById(R.id.first_Number);
@@ -223,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-       // initRadioButtons();
+        // initRadioButtons();
         initMyRadioButtons();
     }
 
@@ -270,10 +268,8 @@ public class MainActivity extends AppCompatActivity {
             setAppTheme(OriginCodeSyle);
             recreate();
         });
-
+ 
     }
-
-
 
 
     private void updateCounters() {
