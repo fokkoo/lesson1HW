@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,6 +8,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:id="@+id/textViewHeadline2"
+        style="@style/PashasCoolStyle"
+        android:layout_width="89dp"
+        android:layout_height="75dp"
+
+
+        android:text="@string/LanguageResource"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView1"
@@ -22,7 +39,7 @@
         tools:layout_editor_absoluteX="58dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewHeadline"
         android:layout_width="204dp"
         android:layout_height="47dp"
         android:background="@color/cardview_light_background"
@@ -35,19 +52,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerAC"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:backgroundTint="#F4E1D2"
-        android:textColor="@android:color/black"
+        android:layout_marginStart="48dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#F4E1D2"
 
         android:text="AC"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalculatorNumer1"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer1" />
 
     <Button
+        android:theme="@style/PashasCoolStyle"
+
         android:id="@+id/buttonCalculatorNumer1"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -60,6 +80,9 @@
         app:layout_constraintVertical_bias="0.267" />
 
     <Button
+
+        style="@style/PashasCoolStyle"
+
         android:id="@+id/buttonCalculatorNumer2"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -257,6 +280,31 @@
         android:text="="
         app:layout_constraintStart_toStartOf="@+id/second_Number"
         app:layout_constraintTop_toBottomOf="@+id/second_Number" />
+
+    <RadioGroup
+        android:layout_width="112dp"
+        android:layout_height="134dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewHeadline"
+        app:layout_constraintTop_toTopOf="@+id/textViewHeadline">
+
+        <RadioButton
+            android:id="@+id/radioButtonPashaCoolStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Cool Style" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDarc"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Dark Style" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Origin Style" />
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

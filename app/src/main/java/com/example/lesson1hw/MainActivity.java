@@ -3,10 +3,20 @@ package com.example.lesson1hw;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String NAME_SHARED_PREFERENCE = "LOGIN";
+    public static final String appTheme = "APP_THEME";
+
+    public static final int PashaCoolCodeSyle = 0;
+    public static final int DarkCodeStyle = 1;
+    public static final int OriginCodeSyle = 2;
+
 
     private int counter1 = 0;
     public static final String DEFAULT_VALUE_NUMBERS_AND_ANSWER = "0";
@@ -30,7 +40,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        int currentThemeCode = getCodeStyle();
+        int currentThemeResId = codeStyleToStyleId(currentThemeCode);
+        setTheme(currentThemeResId);
+
+
+
         setContentView(R.layout.activity_main);
+
+
+        Typeface typefaceTokyoZoo = Typeface.createFromAsset(getAssets(), "font/ZenTokyoZoo-Regular.ttf");
+        TextView textViewHeadline = findViewById(R.id.textViewHeadline2);
+        textViewHeadline.setTypeface(typefaceTokyoZoo);
+
+
 
         first_Number = findViewById(R.id.first_Number);
         second_Number = findViewById(R.id.second_Number);
@@ -198,7 +222,59 @@ public class MainActivity extends AppCompatActivity {
             updateMathAnswer();
 
         });
+
+       // initRadioButtons();
+        initMyRadioButtons();
     }
+
+    private void initRadioButtons() {
+    }
+
+
+    private int getCodeStyle() {
+        SharedPreferences preferences = getSharedPreferences(NAME_SHARED_PREFERENCE, MODE_PRIVATE);
+        return preferences.getInt(appTheme, R.style.PashasCoolStyle);
+    }
+
+    private void setAppTheme(int codeStyle) {
+        SharedPreferences preferences = getSharedPreferences(NAME_SHARED_PREFERENCE, MODE_PRIVATE);
+        preferences.edit()
+                .putInt(appTheme, codeStyle)
+                .apply();
+    }
+
+    private int codeStyleToStyleId(int codeStyle) {
+        switch (codeStyle) {
+            case PashaCoolCodeSyle:
+                return R.style.PashasCoolStyle;
+            case DarkCodeStyle:
+                return R.style.ThemeOverlay_AppCompat_Dark;
+            case OriginCodeSyle:
+                return R.style.Theme_Lesson1HW;
+            default:
+                return R.style.ThemeOverlay_AppCompat_Dark;
+        }
+    }
+
+
+    private void initMyRadioButtons() {
+        findViewById(R.id.radioButtonPashaCoolStyle).setOnClickListener(v -> {
+            setAppTheme(PashaCoolCodeSyle);
+            recreate();
+        });
+        findViewById(R.id.radioButtonDarc).setOnClickListener(v -> {
+            setAppTheme(DarkCodeStyle);
+            recreate();
+        });
+        findViewById(R.id.radioButtonOrigin).setOnClickListener(v -> {
+            setAppTheme(OriginCodeSyle);
+            recreate();
+        });
+
+    }
+
+
+
 
     private void updateCounters() {
 
