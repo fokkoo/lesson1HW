@@ -268,7 +268,7 @@ public class MainActivity extends AppCompatActivity {
             setAppTheme(OriginCodeSyle);
             recreate();
         });
- 
+  
     }
 
 
