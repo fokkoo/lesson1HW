@@ -3,6 +3,7 @@ package com.example.lesson1hw;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -50,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Typeface typefaceTokyoZoo = Typeface.createFromAsset(getAssets(), "font/ZenTokyoZoo-Regular.ttf");
-        TextView textViewHeadline = findViewById(R.id.textViewHeadline2);
-        textViewHeadline.setTypeface(typefaceTokyoZoo);
+       // TextView textViewHeadline = findViewById(R.id.textViewHeadline2);
+       // textViewHeadline.setTypeface(typefaceTokyoZoo);
 
 
         first_Number = findViewById(R.id.first_Number);
@@ -223,6 +224,15 @@ public class MainActivity extends AppCompatActivity {
 
         //
         initMyRadioButtons();
+        initGoToSettingsActivity();
+    }
+
+    private void initGoToSettingsActivity() {
+        findViewById(R.id.buttonSettings).setOnClickListener(v ->{
+            Intent intenGoToSettingsActivity = new Intent(this, Settings.class);
+            startActivity(intenGoToSettingsActivity);
+
+        } );
     }
 
     private void initRadioButtons() {
@@ -304,7 +314,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateMathAction() {
         math_Action.setText(String.valueOf(current_math_action));
-        
+
     }
 
     private void updateMathAnswer() {
