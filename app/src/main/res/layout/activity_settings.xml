@@ -22,19 +22,19 @@
             android:id="@+id/radioButtonPashaCoolStyleSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Cool Style Settings" />
 
         <RadioButton
             android:id="@+id/radioButtonDarcSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Dark Style" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButtonOriginSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="radioButtonOriginSettings" />
+            android:text="Origin Style" />
 
         <Button
             android:id="@+id/buttonGoToCalcunator"

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int PashaCoolCodeSyle = 0;
     public static final int DarkCodeStyle = 1;
     public static final int OriginCodeSyle = 2;
+    public static final String SUM_RESULT_ = "SUM_RESULT ";
 
 
     private int counter1 = 0;
@@ -51,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         Typeface typefaceTokyoZoo = Typeface.createFromAsset(getAssets(), "font/ZenTokyoZoo-Regular.ttf");
-       // TextView textViewHeadline = findViewById(R.id.textViewHeadline2);
-       // textViewHeadline.setTypeface(typefaceTokyoZoo);
+        // TextView textViewHeadline = findViewById(R.id.textViewHeadline2);
+        // textViewHeadline.setTypeface(typefaceTokyoZoo);
 
 
         first_Number = findViewById(R.id.first_Number);
@@ -228,14 +229,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initGoToSettingsActivity() {
-        findViewById(R.id.buttonSettings).setOnClickListener(v ->{
+        findViewById(R.id.buttonSettings).setOnClickListener(v -> {
             Intent intenGoToSettingsActivity = new Intent(this, Settings.class);
+            //  intenGoToSettingsActivity.putExtra(SUM_RESULT_,textViewAnser.toString());
             startActivity(intenGoToSettingsActivity);
 
-        } );
-    }
-
-    private void initRadioButtons() {
+        });
     }
 
 
