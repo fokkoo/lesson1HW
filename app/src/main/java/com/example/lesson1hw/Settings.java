@@ -26,7 +26,6 @@ public class Settings extends AppCompatActivity {
         setTheme(currentThemeResId);
 
 
-
         setContentView(R.layout.activity_settings);
 
         initGoToMainActivity();
