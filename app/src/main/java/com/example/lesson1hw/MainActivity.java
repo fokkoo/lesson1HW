@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+//
     public static final String NAME_SHARED_PREFERENCE = "LOGIN";
     public static final String appTheme = "APP_THEME";
 
