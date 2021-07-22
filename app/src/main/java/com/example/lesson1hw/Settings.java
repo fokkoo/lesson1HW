@@ -8,7 +8,6 @@ import android.view.View;
 
 public class Settings extends AppCompatActivity {
 
-
     public static final String NAME_SHARED_PREFERENCE = "LOGIN";
     public static final String appTheme = "APP_THEME";
 
