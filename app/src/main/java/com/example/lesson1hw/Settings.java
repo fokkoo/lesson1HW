@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Settings extends AppCompatActivity {
-
+    //settings activ
     public static final String NAME_SHARED_PREFERENCE = "LOGIN";
     public static final String appTheme = "APP_THEME";
 
@@ -24,7 +24,6 @@ public class Settings extends AppCompatActivity {
         int currentThemeResId = codeStyleToStyleId(currentThemeCode);
         setTheme(currentThemeResId);
 
-
         setContentView(R.layout.activity_settings);
 
         initGoToMainActivity();
@@ -39,10 +38,6 @@ public class Settings extends AppCompatActivity {
             }
         });
     }
-
-
-
-
 
 
     private int getCodeStyle() {

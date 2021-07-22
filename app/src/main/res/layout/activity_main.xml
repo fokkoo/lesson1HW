@@ -66,7 +66,6 @@
 
     <com.google.android.material.button.MaterialButton
 
-        
 
         android:id="@+id/buttonCalculatorNumer2"
         android:layout_width="60dp"
@@ -154,19 +153,19 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
-        android:text="/"
         android:backgroundTint="#F36E07"
+        android:text="/"
         android:textColorHighlight="@color/purple_200"
         app:layout_constraintStart_toEndOf="@+id/buttonCalculatorNumer3"
-        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer3"        />
+        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer3" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerX"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="X"
         android:backgroundTint="#F36E07"
+        android:text="X"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerDiv"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerDiv" />
 
@@ -175,8 +174,8 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="-"
         android:backgroundTint="#F36E07"
+        android:text="-"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerX"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerX" />
 
@@ -185,8 +184,8 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="+"
         android:backgroundTint="#F36E07"
+        android:text="+"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerMin"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerMin" />
 
@@ -195,8 +194,8 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="="
         android:backgroundTint="#F36E07"
+        android:text="="
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer9"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer9" />
 
