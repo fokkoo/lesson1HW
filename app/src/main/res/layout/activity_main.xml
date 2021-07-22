@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,36 +21,38 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/abacus"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
-
+        tools:layout_editor_absoluteX="58dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textViewHeadline"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
         android:background="@color/cardview_light_background"
         android:backgroundTint="#4CAF50"
-        android:text=" This is start for Calculator!"
+        android:text="@string/LanguageResource"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.023" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerAC"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:backgroundTint="#F4E1D2"
-        android:textColor="@android:color/black"
+        android:layout_marginStart="48dp"
         android:layout_marginBottom="20dp"
+        android:backgroundTint="#F4E1D2"
 
         android:text="AC"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalculatorNumer1"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+
+
         android:id="@+id/buttonCalculatorNumer1"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -60,7 +64,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.267" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+
+
         android:id="@+id/buttonCalculatorNumer2"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -70,7 +76,7 @@
         app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer1" />
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer3"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -79,7 +85,7 @@
         app:layout_constraintStart_toEndOf="@+id/buttonCalculatorNumer2"
         app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer4"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -88,7 +94,7 @@
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer1"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer1" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer5"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -97,7 +103,7 @@
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer2"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer2" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer6"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -106,7 +112,7 @@
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer3"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer7"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -115,7 +121,7 @@
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer4"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer4" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer8"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -124,7 +130,7 @@
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer5"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer9"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -133,7 +139,7 @@
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer6"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer6" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumer0"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -142,58 +148,58 @@
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer8"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer8" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerDiv"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
-        android:text="/"
         android:backgroundTint="#F36E07"
+        android:text="/"
         android:textColorHighlight="@color/purple_200"
         app:layout_constraintStart_toEndOf="@+id/buttonCalculatorNumer3"
-        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer3"        />
+        app:layout_constraintTop_toTopOf="@+id/buttonCalculatorNumer3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerX"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="X"
         android:backgroundTint="#F36E07"
+        android:text="X"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerDiv"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerDiv" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerMin"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="-"
         android:backgroundTint="#F36E07"
+        android:text="-"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerX"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerX" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerPlus"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="+"
         android:backgroundTint="#F36E07"
+        android:text="+"
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerMin"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerMin" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerEqulse"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:text="="
         android:backgroundTint="#F36E07"
+        android:text="="
         app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumer9"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer9" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonCalculatorNumerCommar"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -212,8 +218,86 @@
         android:text="Calculation Answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Text_constant_Equlse"
+        app:layout_constraintTop_toBottomOf="@+id/Text_constant_Equlse"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/first_Number"
+        android:layout_width="142dp"
+        android:layout_height="22dp"
+        android:text="First Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalculatorNumerCommar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumerPlus"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/second_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Second Number"
+        app:layout_constraintStart_toStartOf="@+id/first_Number"
+        app:layout_constraintTop_toBottomOf="@+id/first_Number" />
+
+    <TextView
+        android:id="@+id/current_math_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Current math action"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/first_Number"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCalculatorNumer0" />
+        app:layout_constraintTop_toBottomOf="@+id/first_Number"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Text_constant_Equlse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="="
+        app:layout_constraintStart_toStartOf="@+id/second_Number"
+        app:layout_constraintTop_toBottomOf="@+id/second_Number" />
+
+    <RadioGroup
+        android:layout_width="112dp"
+        android:layout_height="134dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewHeadline"
+        app:layout_constraintTop_toTopOf="@+id/textViewHeadline">
+
+        <RadioButton
+            android:id="@+id/radioButtonPashaCoolStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Cool Style" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDarc"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Dark Style" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Origin Style" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="80dp"
+        android:layout_height="76dp"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
