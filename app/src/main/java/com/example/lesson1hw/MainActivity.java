@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String SUM_RESULT_ = "SUM_RESULT ";
 
 
+    //
+
     private int counter1 = 0;
     public static final String DEFAULT_VALUE_NUMBERS_AND_ANSWER = "0";
     private boolean changeToSecondNumber = false;
